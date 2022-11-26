@@ -11,7 +11,6 @@ class Solution {
             }
             else {
                 wordsBuilder = wordsBuilder.delete(0,wordsBuilder.length());
-                wordsBuilderReverse = wordsBuilderReverse.delete(0,wordsBuilder.length());
             }
         }
         return "";
