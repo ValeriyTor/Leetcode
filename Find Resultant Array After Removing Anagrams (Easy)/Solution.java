@@ -1,9 +1,7 @@
 class Solution {
     public List<String> removeAnagrams(String[] words) {
         List<String> list = new ArrayList<>();
-        for(int i = 0 ; i < words.length; i++){
-            list.add(words[i]);
-        }
+	Collections.addAll(list, words);
         for(int i = 0 ; i < list.size()-1; i++){
             if(isAnagramR(list.get(i), list.get(i+1))){
                 list.remove(i+1);
